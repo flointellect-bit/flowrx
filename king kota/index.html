@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Kotas Made Fast 🔥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <div class="shape-container">
+    <div class="shape sausage blur sh-1"></div>
+    <div class="shape triangle sharp sh-2"></div>
+    <div class="shape polony sharp sh-3"></div>
+    <div class="shape sausage blur sh-4"></div>
+  </div>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">FRESH <span>KOTAS</span></div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero fade-in-up">
+      <div class="hero-content">
+        <h1>Fresh Kotas<br><span class="highlight">Made Fast 🔥</span></h1>
+        <p class="subtext">Add to your basket, calculate your total instantly, pay securely via PayFast, and skip the queue!</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary glow-btn">View Menu</a>
+          <a href="#contact" class="btn btn-secondary">Location</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU WITH ADD TO CART BUTTONS -->
+    <section id="menu" class="menu-section scroll-anim">
+      <h2>Our <span>Menu</span></h2>
+      <div class="menu-grid">
+        
+        <div class="menu-card">
+          <h3>Kotas</h3>
+          <ul>
+            <li>
+              <div><span class="item-name">Afterschool Bite</span><span class="price">R40</span></div>
+              <button class="add-btn" onclick="addToCart('Afterschool Bite', 40)">+ Add</button>
+            </li>
+            <li>
+              <div><span class="item-name">King Licious</span><span class="price">R45</span></div>
+              <button class="add-btn" onclick="addToCart('King Licious', 45)">+ Add</button>
+            </li>
+            <li>
+              <div><span class="item-name">King Garnished</span><span class="price">R55</span></div>
+              <button class="add-btn" onclick="addToCart('King Garnished', 55)">+ Add</button>
+            </li>
+            <li>
+              <div><span class="item-name">King Tasty Bite</span><span class="price">R65</span></div>
+              <button class="add-btn" onclick="addToCart('King Tasty Bite', 65)">+ Add</button>
+            </li>
+            <li>
+              <div><span class="item-name">Royal Kota</span><span class="price">R75</span></div>
+              <button class="add-btn" onclick="addToCart('Royal Kota', 75)">+ Add</button>
+            </li>
+            <li>
+              <div><span class="item-name">King Feast</span><span class="price">R90</span></div>
+              <button class="add-btn" onclick="addToCart('King Feast', 90)">+ Add</button>
+            </li>
+            <li>
+              <div><span class="item-name">Loaf Bite</span><span class="price">R160</span></div>
+              <button class="add-btn" onclick="addToCart('Loaf Bite', 160)">+ Add</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-card">
+          <h3>Loaded Chips</h3>
+          <ul>
+            <li><div><span class="item-name">Medium Chips</span><span class="price">R50</span></div><button class="add-btn" onclick="addToCart('Medium Chips', 50)">+ Add</button></li>
+            <li><div><span class="item-name">Large Chips</span><span class="price">R70</span></div><button class="add-btn" onclick="addToCart('Large Chips', 70)">+ Add</button></li>
+            <li><div><span class="item-name">Loaf Bite Double</span><span class="price">R200</span></div><button class="add-btn" onclick="addToCart('Loaf Bite Double', 200)">+ Add</button></li>
+          </ul>
+        </div>
+
+        <div class="menu-card">
+          <h3>Grill Menu</h3>
+          <ul>
+            <li><div><span class="item-name">Full Chicken + Chips</span><span class="price">R160</span></div><button class="add-btn" onclick="addToCart('Full Chicken + Chips', 160)">+ Add</button></li>
+            <li><div><span class="item-name">Ribs, Wings & Chips</span><span class="price">R200</span></div><button class="add-btn" onclick="addToCart('Ribs, Wings & Chips', 200)">+ Add</button></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STORE INFO SECTION (Location Updated) -->
+    <section id="contact" class="contact-section scroll-anim">
+      <h2>Store <span>Location</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Protea Glen, Soweto</h3>
+          <p>📍 Protea Glen, Soweto, 1819</p>
+          <p><em>(In-store Collection Only. No delivery services currently active.)</em></p>
+          <div class="spacer"></div>
+          
+          <h3>Business Hours</h3>
+          <p><strong>Mon - Sun:</strong> 09:00 AM – 09:00 PM</p>
+          <p><small>*Online ordering closes for the kitchen daily at exactly 20:50 PM</small></p>
+        </div>
+
+        <div class="map-embed">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114486.29953257859!2d27.76676161405624!3d-26.26252989115712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a7ecb0a0efab%3A0xc3cf0ea13b1fdb5!2sProtea%20Glen%2C%20Soweto!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FLOATING CART BUTTON -->
+  <div class="floating-cart" onclick="toggleCart()">
+    <div class="cart-icon">🛒</div>
+    <div class="cart-badge" id="cartBadge">0</div>
+  </div>
+
+  <!-- CART SLIDING BASKET (SIDEBAR) -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Basket 🛒</h3>
+      <button class="close-cart" onclick="toggleCart()">✕</button>
+    </div>
+    
+    <div class="cart-items" id="cartItemsContainer">
+      <div class="empty-cart-msg">Your basket is empty. Add some fire food!</div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-line">
+        <strong>Total:</strong>
+        <strong id="cartTotalValue" style="color: var(--accent-yellow); font-size: 1.5rem;">R0</strong>
+      </div>
+      
+      <!-- Checkout Form via Payfast/Formspree email trigger -->
+      <div class="checkout-form">
+        <div class="cart-notice" style="text-align:center; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 5px;">Collection Only @ Protea Glen, Soweto.</div>
+        <input type="text" id="custName" placeholder="Full Name (for order collection)" required>
+        <input type="tel" id="custPhone" placeholder="Phone Number" required>
+        
+        <div id="closedMessage" class="store-closed-alert">
+          🚨 <strong>Online Orders Closed for the day!</strong>
+        </div>
+
+        <button id="checkoutBtn" class="btn btn-primary w-full glow-btn" onclick="processCheckout()">
+          Proceed to PayFast & Place Order
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

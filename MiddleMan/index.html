@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiddleMan23 | Customer Acquisition Specialists</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR SECTION -->
+    <header class="navbar sticky shadow-md hover-lift-element">
+        <div class="container flex-row justify-between align-center">
+            <div class="logo">MiddleMan23.</div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="products.html">Packages</a>
+                <a href="#contact" class="btn btn-sm btn-accent hover-lift">Get in Touch</a>
+            </nav>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero hover-lift-section">
+        <div class="container center-text">
+            <h1 class="hero-title text-strong">We Bring You Customers <span class="text-highlight">That Pay</span></h1>
+            <p class="hero-subtext">Helping businesses grow using proven marketing strategies and modern customer acquisition models.</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn btn-lg btn-accent hover-lift">Get Started</a>
+                <a href="https://wa.me/27620711968?text=Hi%20I’m%20interested%20in%20growing%20my%20business%20with%20MiddleMan23" target="_blank" class="btn btn-lg btn-accent-outline hover-lift">Chat on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section-padding section-bg-alt">
+        <div class="container text-center max-w-lg hover-lift-section card">
+            <h2 class="section-title text-strong">About Us</h2>
+            <p>MiddleMan23 is a dedicated <strong>customer acquisition agency</strong>. We specialize in locating, attracting, and converting prospects into loyal clients. We ensure scalable and steady growth by deploying sophisticated data-driven approaches combined with compelling messaging.</p>
+            
+            <div class="feature-tags">
+                <span class="tag bg-caramel hover-lift">Content Marketing</span>
+                <span class="tag bg-caramel hover-lift">Paid Ads</span>
+                <span class="tag bg-caramel hover-lift">Referral Systems</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRATEGY SECTION -->
+    <section class="strategy section-padding">
+        <div class="container">
+            <h2 class="section-title text-strong text-center">Our Strategies</h2>
+            <div class="grid-card grid-5">
+                <div class="card hover-lift">
+                    <h3>Ideal Customer Profiling</h3>
+                    <p>Finding precisely who benefits the most from what you sell.</p>
+                </div>
+                <div class="card hover-lift">
+                    <h3>Multi-Channel Marketing</h3>
+                    <p>Omnipresence across all crucial platforms natively.</p>
+                </div>
+                <div class="card hover-lift">
+                    <h3>Product-Led Growth</h3>
+                    <p>Optimizing the value loop for natural traction.</p>
+                </div>
+                <div class="card hover-lift">
+                    <h3>Email Automation</h3>
+                    <p>Warming cold leads entirely on autopilot.</p>
+                </div>
+                <div class="card hover-lift">
+                    <h3>Personalisation</h3>
+                    <p>Crafting offers so targeted, they feel custom-made.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTER SECTION -->
+    <section class="counters section-padding text-center bg-caramel text-brown shadow-inner hover-lift-section">
+        <div class="container grid-card grid-3">
+            <div class="counter-box hover-lift card-alt">
+                <h2>+<span class="counter" data-target="100">0</span></h2>
+                <p>Clients Helped</p>
+            </div>
+            <div class="counter-box hover-lift card-alt">
+                <h2>+<span class="counter" data-target="300">0</span></h2>
+                <p>Campaigns Run</p>
+            </div>
+            <div class="counter-box hover-lift card-alt">
+                <h2>+<span class="counter" data-target="1">0</span>M</h2>
+                <p>Reach Generated</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & FEEDBACK FORM (Included across pages) -->
+    <section id="contact" class="contact section-padding bg-alt">
+        <div class="container grid-2-columns gap-lg">
+            
+            <div class="contact-info card hover-lift">
+                <h2 class="text-strong">Let's talk growth.</h2>
+                <p>Not ready for a meeting? Message us right away via WhatsApp:</p>
+                <a href="https://wa.me/27620711968?text=Hi%20I’m%20interested%20in%20growing%20my%20business%20with%20MiddleMan23" target="_blank" class="btn btn-accent btn-lg w-full mt-4 text-center hover-lift">Chat on WhatsApp Now</a>
+            </div>
+
+            <div class="contact-form card hover-lift form-container">
+                <form id="feedback-form">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" id="fname" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="femail" required placeholder="john@company.com">
+                    </div>
+                    <div class="form-row flex-row">
+                        <div class="form-group half-width">
+                            <label>Phone</label>
+                            <input type="text" id="fphone" placeholder="+27 XXX XXXX">
+                        </div>
+                        <div class="form-group half-width">
+                            <label>Business Name</label>
+                            <input type="text" id="fbusiness" placeholder="ACME Inc.">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="fmessage" rows="4" required placeholder="How can we help?"></textarea>
+                    </div>
+
+                    <!-- FEEDBACK / REVIEW COMPONENT -->
+                    <div class="feedback-box bg-caramel p-3 rounded mt-2">
+                        <label class="text-strong block mb-1">How did you hear about us / Rate our response:</label>
+                        <div class="star-rating" id="star-rating">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <select id="fsatisfaction" class="mt-2 custom-select">
+                            <option value="">-- Rate Us --</option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Average">Average</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-accent w-full mt-4 hover-lift">Send Inquiry</button>
+                    <div id="form-success" class="success-message mt-2 hidden">Thanks! Your inquiry was received. We'll be in touch.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-brown text-beige">
+        <p>&copy; 2026 MiddleMan23. Customer Acquisition Agency.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
